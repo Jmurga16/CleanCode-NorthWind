@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enterprise Business Rules", "Enterprise Business Rules", "{D8C735B7-0BC9-49CE-B91E-967C43C23E40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application Business Rules", "Application Business Rules", "{98E1BF9F-D3BE-4AE4-9D75-18438E02F93D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface Adapters", "Interface Adapters", "{58A0DC05-E7B8-4F11-9AC3-FF3B32E9F9A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frameworks And Drivers", "Frameworks And Drivers", "{88F8A100-A3EE-40AD-96E1-AAEE98E8735C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Entities", "NorthWind.Entities\NorthWind.Entities.csproj", "{3D042CD3-129E-4725-8ED2-D06B57B1419B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{89C310CE-1799-4F47-B207-CBC120755495}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Repositories.EFCore", "NorthWind.Repositories.EFCore\NorthWind.Repositories.EFCore.csproj", "{542CC049-A1AB-4777-AB40-8AC7EA3597D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.UseCasesDTOs", "NorthWind.UseCasesDTOs\NorthWind.UseCasesDTOs.csproj", "{563D1B23-2036-4908-81EF-A9FB056EFF0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.UseCases", "NorthWind.UseCases\NorthWind.UseCases.csproj", "{816839F8-4D7B-4DDC-976F-6A645FF92E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.IoC", "NorthWind.IoC\NorthWind.IoC.csproj", "{553E3185-4730-41E1-BCC1-BCD57D4D5FE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{A711EDE6-6E61-4A5F-932F-3C50C7D64B72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.WebExceptionPresenter", "NorthWind.WebExceptionPresenter\NorthWind.WebExceptionPresenter.csproj", "{8527E2B9-ECC2-4CD8-A46A-F21412041B74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.WebApi", "NorthWind.WebApi\NorthWind.WebApi.csproj", "{E8BFB8F9-69B8-429A-A264-CDAC5D1B07EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D042CD3-129E-4725-8ED2-D06B57B1419B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D042CD3-129E-4725-8ED2-D06B57B1419B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D042CD3-129E-4725-8ED2-D06B57B1419B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D042CD3-129E-4725-8ED2-D06B57B1419B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542CC049-A1AB-4777-AB40-8AC7EA3597D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542CC049-A1AB-4777-AB40-8AC7EA3597D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542CC049-A1AB-4777-AB40-8AC7EA3597D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542CC049-A1AB-4777-AB40-8AC7EA3597D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{563D1B23-2036-4908-81EF-A9FB056EFF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{563D1B23-2036-4908-81EF-A9FB056EFF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{563D1B23-2036-4908-81EF-A9FB056EFF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{563D1B23-2036-4908-81EF-A9FB056EFF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{816839F8-4D7B-4DDC-976F-6A645FF92E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{816839F8-4D7B-4DDC-976F-6A645FF92E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{816839F8-4D7B-4DDC-976F-6A645FF92E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{816839F8-4D7B-4DDC-976F-6A645FF92E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{553E3185-4730-41E1-BCC1-BCD57D4D5FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{553E3185-4730-41E1-BCC1-BCD57D4D5FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{553E3185-4730-41E1-BCC1-BCD57D4D5FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{553E3185-4730-41E1-BCC1-BCD57D4D5FE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8527E2B9-ECC2-4CD8-A46A-F21412041B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8527E2B9-ECC2-4CD8-A46A-F21412041B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8527E2B9-ECC2-4CD8-A46A-F21412041B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8527E2B9-ECC2-4CD8-A46A-F21412041B74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8BFB8F9-69B8-429A-A264-CDAC5D1B07EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8BFB8F9-69B8-429A-A264-CDAC5D1B07EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8BFB8F9-69B8-429A-A264-CDAC5D1B07EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8BFB8F9-69B8-429A-A264-CDAC5D1B07EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3D042CD3-129E-4725-8ED2-D06B57B1419B} = {D8C735B7-0BC9-49CE-B91E-967C43C23E40}
+		{89C310CE-1799-4F47-B207-CBC120755495} = {58A0DC05-E7B8-4F11-9AC3-FF3B32E9F9A4}
+		{542CC049-A1AB-4777-AB40-8AC7EA3597D6} = {89C310CE-1799-4F47-B207-CBC120755495}
+		{563D1B23-2036-4908-81EF-A9FB056EFF0B} = {98E1BF9F-D3BE-4AE4-9D75-18438E02F93D}
+		{816839F8-4D7B-4DDC-976F-6A645FF92E72} = {98E1BF9F-D3BE-4AE4-9D75-18438E02F93D}
+		{553E3185-4730-41E1-BCC1-BCD57D4D5FE7} = {89C310CE-1799-4F47-B207-CBC120755495}
+		{A711EDE6-6E61-4A5F-932F-3C50C7D64B72} = {58A0DC05-E7B8-4F11-9AC3-FF3B32E9F9A4}
+		{8527E2B9-ECC2-4CD8-A46A-F21412041B74} = {A711EDE6-6E61-4A5F-932F-3C50C7D64B72}
+		{E8BFB8F9-69B8-429A-A264-CDAC5D1B07EF} = {89C310CE-1799-4F47-B207-CBC120755495}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A58C45F-4EB4-4BDE-8C95-8AA328DFCBAB}
+	EndGlobalSection
+EndGlobal

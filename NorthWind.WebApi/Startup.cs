@@ -1,4 +1,3 @@
-using FluentValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -8,7 +7,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using NorthWind.Entities.Exceptions;
 using NorthWind.IoC;
 using NorthWind.WebExceptionPresenter;
 using System;
@@ -31,15 +29,7 @@ namespace NorthWind.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers(options =>
-            options.Filters.Add(new ApiExceptionFilterAttribute(
-                new Dictionary<Type, IExceptionHandler>
-                {
-                    { typeof(GeneralException),new GeneralExceptionHandler() },
-                    { typeof(ValidationException), new ValidationExceptionHandler() }
-                })
-            ));
-
+            services.AddControllers(Filters.Register);
 
             services.AddSwaggerGen(c =>
             {

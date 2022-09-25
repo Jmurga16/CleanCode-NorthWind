@@ -27,15 +27,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.WebExceptionPresenter", "NorthWind.WebExceptionPresenter\NorthWind.WebExceptionPresenter.csproj", "{8527E2B9-ECC2-4CD8-A46A-F21412041B74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Presenters", "NorthWind.Presenters\NorthWind.Presenters.csproj", "{2B958C06-00C7-440D-A5A3-9677D8A4B703}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Presenters", "NorthWind.Presenters\NorthWind.Presenters.csproj", "{2B958C06-00C7-440D-A5A3-9677D8A4B703}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{E50E2DEA-3C7B-490B-AE69-C3F9281AEA6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Controllers", "NorthWind.Controllers\NorthWind.Controllers.csproj", "{2F588879-47BF-4098-924A-FF325D4BCE08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Controllers", "NorthWind.Controllers\NorthWind.Controllers.csproj", "{2F588879-47BF-4098-924A-FF325D4BCE08}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{E686FAB6-1A5E-469F-817F-B5C6EBDE7EB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.WebApi", "NorthWind.WebApi\NorthWind.WebApi.csproj", "{C4DFEDEC-1E11-4BA9-942B-FA7117EB7009}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.WebApi", "NorthWind.WebApi\NorthWind.WebApi.csproj", "{C4DFEDEC-1E11-4BA9-942B-FA7117EB7009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.UseCasesPorts", "NorthWind.UseCasesPorts\NorthWind.UseCasesPorts.csproj", "{77C0D8D6-A74E-4017-86FC-0341435855FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +81,10 @@ Global
 		{C4DFEDEC-1E11-4BA9-942B-FA7117EB7009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4DFEDEC-1E11-4BA9-942B-FA7117EB7009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4DFEDEC-1E11-4BA9-942B-FA7117EB7009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C0D8D6-A74E-4017-86FC-0341435855FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C0D8D6-A74E-4017-86FC-0341435855FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C0D8D6-A74E-4017-86FC-0341435855FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C0D8D6-A74E-4017-86FC-0341435855FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,6 +103,7 @@ Global
 		{2F588879-47BF-4098-924A-FF325D4BCE08} = {E50E2DEA-3C7B-490B-AE69-C3F9281AEA6E}
 		{E686FAB6-1A5E-469F-817F-B5C6EBDE7EB2} = {88F8A100-A3EE-40AD-96E1-AAEE98E8735C}
 		{C4DFEDEC-1E11-4BA9-942B-FA7117EB7009} = {E686FAB6-1A5E-469F-817F-B5C6EBDE7EB2}
+		{77C0D8D6-A74E-4017-86FC-0341435855FE} = {98E1BF9F-D3BE-4AE4-9D75-18438E02F93D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A58C45F-4EB4-4BDE-8C95-8AA328DFCBAB}

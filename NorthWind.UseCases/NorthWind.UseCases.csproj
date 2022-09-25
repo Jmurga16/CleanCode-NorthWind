@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\NorthWind.Entities\NorthWind.Entities.csproj" />
     <ProjectReference Include="..\NorthWind.UseCasesDTOs\NorthWind.UseCasesDTOs.csproj" />
+    <ProjectReference Include="..\NorthWind.UseCasesPorts\NorthWind.UseCasesPorts.csproj" />
   </ItemGroup>
 
 </Project>

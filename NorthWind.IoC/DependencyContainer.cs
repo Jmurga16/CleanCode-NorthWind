@@ -4,10 +4,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NorthWind.Entities.Interfaces;
+using NorthWind.Presenters;
 using NorthWind.Repositories.EFCore.DataContext;
 using NorthWind.Repositories.EFCore.Repositories;
-using NorthWind.UseCases.Common.Behavior;
+using NorthWind.UseCases.Common.Validators;
 using NorthWind.UseCases.CreateOrder;
+using NorthWind.UseCasesPorts.CreateOrder;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,10 +27,12 @@ namespace NorthWind.IoC
             services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-            services.AddMediatR(typeof(CreateOrderInteractor));
             services.AddValidatorsFromAssembly(typeof(CreateOrderValidator).Assembly);
-            services.AddTransient(typeof(IPipelineBehavior<,>),
-                typeof(ValidationBehavior<,>));
+
+            services.AddScoped<ICreateOrderInputPort, CreateOrderInteractor>();
+            services.AddScoped<ICreateOrderOutputPort, CreateOrderPresenter>();
+
+
 
             return services;
         }

@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NorthWind.Presenters\NorthWind.Presenters.csproj" />
     <ProjectReference Include="..\NorthWind.Repositories.EFCore\NorthWind.Repositories.EFCore.csproj" />
     <ProjectReference Include="..\NorthWind.UseCases\NorthWind.UseCases.csproj" />
   </ItemGroup>

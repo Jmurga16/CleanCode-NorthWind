@@ -1,4 +1,4 @@
-﻿using NorthWind.UseCases.Common.Ports;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace NorthWind.Presenters
 {
-    public interface IPresenter<ResponseType, FormatType>:IOutputPort<ResponseType>
+    public interface IPresenter<FormatDataType>
     {
-        public FormatType Content { get;}
+        public FormatDataType Content { get;}
 
     }
 }
